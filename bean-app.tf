@@ -1,3 +1,3 @@
-resource "aws_elastic_beanstalk_application" "vprofile-prod-maaz" {
-  name = "vprofile-prod-maaz"
+resource "aws_elastic_beanstalk_application" "vprofile-prod" {
+  name = "vprofile-prod"
 }
