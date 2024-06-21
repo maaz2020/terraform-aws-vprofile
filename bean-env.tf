@@ -65,17 +65,17 @@ resource "aws_elastic_beanstalk_environment" "vprofile-bean-prod-maaz" {
   }
   setting {
     name      = "RollingUpdateEnabled"
-    namespace = "autoscaling:updatepolicy:rollingupdate"
+    namespace = "aws:autoscaling:updatepolicy:rollingupdate"
     value     = "true"
   }
   setting {
     name      = "RollingUpdateType"
-    namespace = "autoscaling:updatepolicy:rollingupdate"
+    namespace = "aws:autoscaling:updatepolicy:rollingupdate"
     value     = "Health"
   }
   setting {
     name      = "MaxBatchSize"
-    namespace = "autoscaling:updatepolicy:rollingupdate"
+    namespace = "aws:autoscaling:updatepolicy:rollingupdate"
     value     = "1"
   }
   setting {
