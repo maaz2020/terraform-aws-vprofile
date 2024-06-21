@@ -89,7 +89,7 @@ resource "aws_elastic_beanstalk_environment" "vprofile-bean-prod-maaz" {
     value     = "true"
   }
   setting {
-    name      = "BatchSize"
+    name      = "BatchSizeType"
     namespace = "aws:elasticbeanstalk:command"
     value     = "Fixed"
   }
